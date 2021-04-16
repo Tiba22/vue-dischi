@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Vue Dischi Musicali</title>
+
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+  <!-- Bootstrap v4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Axios -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'>
+  </script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <div id="app">
+    <div class="container">
+
+      <div class="card" v-for='album in albums'>
+        <div class="imgCard" :style="`background-image: url('${album.poster}')`">
+        </div>
+        <div class="textCard">
+          <h2>{{ album.title }}</h2>
+          <h4>{{ album.author }}</h4>
+          <span>{{ album.genre }} - </span>
+          <span>{{ album.year }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

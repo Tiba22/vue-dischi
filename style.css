@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  width: 250px;
+  margin: 25px 25px;
+  height: auto;
+  text-align: center;
+}
+
+.imgCard {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.textCard h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 65px;
+  padding-top: 15px;
+}
+
+.textCard h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding-bottom: 5px;
+}
