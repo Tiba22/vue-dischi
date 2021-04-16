@@ -39,3 +39,11 @@
   border-bottom: 1px solid rgba(0,0,0,.125);
   padding-bottom: 5px;
 }
+
+.content-select select {
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+  background-color: black;
+  color: white;
+}

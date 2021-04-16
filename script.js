@@ -4,6 +4,8 @@ function initVue() {
     el: '#app',
     data: {
       albums: [],
+      newGenre: [],
+      genreSelect: '',
     },
 
     mounted() {
@@ -13,14 +15,22 @@ function initVue() {
       .then((response) => {
         this.albums = (response.data.response)
       });
-    }
+    },
+
+    methods: {
+
+      genreFilter: function () {
+        for (let i = 0; i < this.albums.length; i++) {
+          if (this.newGenre.includes(this.albums[i].genre)) {
+
+          } else {
+            this.newGenre.push(this.albums[i].genre)
+          }
+        }
+      } // genreFilter
+    } // Methods
   })
 }
-
-
-
-
-
 
 
 
