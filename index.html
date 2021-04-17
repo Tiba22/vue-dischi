@@ -42,6 +42,10 @@
           <option v-for="genere in newGenre">{{ genere }}</option>
         </select>
       </div>
+      <div class="content-button">
+        <button @click='sortPerYearOld' type="button" name="button">Ordina dal più vecchio</button>
+        <button @click='sortPerYearNew' type="button" name="button">Ordina dal più recente</button>
+      </div>
     </div>
     <div class="container">
 

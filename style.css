@@ -46,4 +46,13 @@
   outline: none;
   background-color: black;
   color: white;
+  margin-right: 5px;
+}
+
+.content-button button {
+  border-radius: 15px;
+  padding: 7px;
+  outline: none;
+  background-color: black;
+  color: white;
 }
